@@ -1,6 +1,6 @@
-# quarto-rladies-cologne
+# quarto- session QMUL 
 
-Hello, Quarto: A World of Possibilities (for Reproducible Publishing) talk for R-Ladies Cologne
+Quarto: An Introduction
 
 ## Setup notes
 
