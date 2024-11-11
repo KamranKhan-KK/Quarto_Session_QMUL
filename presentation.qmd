@@ -1,16 +1,17 @@
 ---
-title: "Hello, Quarto:<br>A World of Possibilities (for Reproducible Publishing)"
-author: "Mine Çetinkaya-Rundel"
-institution: "Duke University + Posit"
-date: "2023-10-03"
+title: "Quarto:<br>An Introduction"
+author: "Kamran Khan"
+institution: "PCTU - QMUL"
+date: today
 title-slide-attributes:
   data-background-image: images/hello-quarto.png
   data-background-size: stretch
   data-background-opacity: "0.5"
-format:
-  revealjs:
-    transition: slide
-    background-transition: fade
+format: revealjs
+revealjs-plugins:
+  - drop
+transition: slide
+background-transition: fade
 editor: visual
 ---
 
@@ -58,7 +59,7 @@ editor: visual
 
 ## Let's see Quarto in action {.center}
 
-<https://github.com/mine-cetinkaya-rundel/quarto-rladies-cologne>
+<https://github.com/KamranKhan-KK/Quarto_Session_QMUL.git>
 
 # Parting remarks
 
@@ -90,7 +91,3 @@ the Quarto Blog: <https://quarto.org/docs/blog>
 <iframe src="https://quarto.org/docs/blog/" width="100%" height="600" title="Quarto 1.3 Pre-release notes"></iframe>
 ```
 ## Thank you! {background-image="images/thank-you.png"}
-
-🐘 [https://fosstodon.org/\@minecr](https://fosstodon.org/@minecr)
-
-🐦 [\@minebocek](https://twitter.com/minebocek)

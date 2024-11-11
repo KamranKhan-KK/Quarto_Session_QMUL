@@ -117,5 +117,82 @@
     "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
     "section": "Thank you!",
     "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n🐦 @minebocek"
+  },
+  {
+    "objectID": "presentation.html#quarto",
+    "href": "presentation.html#quarto",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "presentation.html#quarto-1",
+    "href": "presentation.html#quarto-1",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem"
+  },
+  {
+    "objectID": "presentation.html#quarto-2",
+    "href": "presentation.html#quarto-2",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown"
+  },
+  {
+    "objectID": "presentation.html#quarto-3",
+    "href": "presentation.html#quarto-3",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown\nextends for people who don’t know R Markdown"
+  },
+  {
+    "objectID": "presentation.html#quarto-unifies-extends-r-markdown",
+    "href": "presentation.html#quarto-unifies-extends-r-markdown",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto unifies + extends R Markdown",
+    "text": "Quarto unifies + extends R Markdown\n\n\nConsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\nMore accessible defaults as well as better support for accessibility\nGuardrails, particularly helpful for new learners: YAML completion, informative syntax errors, etc.\nSupport for other languages like Python, Julia, Observable, and more via Jupyter engine for executable code chunks."
+  },
+  {
+    "objectID": "presentation.html#lets-see-quarto-in-action",
+    "href": "presentation.html#lets-see-quarto-in-action",
+    "title": "Quarto:An Introduction",
+    "section": "Let’s see Quarto in action",
+    "text": "Let’s see Quarto in action\nhttps://github.com/KamranKhan-KK/Quarto_Session_QMUL.git"
+  },
+  {
+    "objectID": "presentation.html#quarto-cli",
+    "href": "presentation.html#quarto-cli",
+    "title": "Quarto:An Introduction",
+    "section": "Quarto CLI…",
+    "text": "Quarto CLI…\norchestrates each step of rendering\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "presentation.html#learning-more",
+    "href": "presentation.html#learning-more",
+    "title": "Quarto:An Introduction",
+    "section": "Learning more",
+    "text": "Learning more\nhttps://quarto.org"
+  },
+  {
+    "objectID": "presentation.html#look-forward-to",
+    "href": "presentation.html#look-forward-to",
+    "title": "Quarto:An Introduction",
+    "section": "Look forward to",
+    "text": "Look forward to\nQuarto 1.4! https://quarto.org/docs/prerelease/1.4/"
+  },
+  {
+    "objectID": "presentation.html#follow-up-with",
+    "href": "presentation.html#follow-up-with",
+    "title": "Quarto:An Introduction",
+    "section": "Follow up with…",
+    "text": "Follow up with…\nthe Quarto Blog: https://quarto.org/docs/blog"
+  },
+  {
+    "objectID": "presentation.html#thank-you",
+    "href": "presentation.html#thank-you",
+    "title": "Quarto:An Introduction",
+    "section": "Thank you!",
+    "text": "Thank you!"
   }
 ]
