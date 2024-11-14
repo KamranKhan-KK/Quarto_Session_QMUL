@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.395">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Mine Çetinkaya-Rundel">
+<meta name="author" content="Kamran Khan">
 
 <title>Hello Quarto - Hello, Penguins!</title>
 <style>
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -59,7 +59,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -101,12 +100,6 @@ div.csl-indent {
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -130,7 +123,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Hello Quarto</span>
     </a>
@@ -142,17 +135,17 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talk.html"> 
-<span class="menu-text">Slides</span></a>
+    <a class="nav-link" href="./talk.qmd" rel="" target="">
+ <span class="menu-text">Slides</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -178,7 +171,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Mine Çetinkaya-Rundel </p>
+             <p>Kamran Khan </p>
           </div>
   </div>
     
@@ -187,9 +180,7 @@ div.csl-indent {
   </div>
   
 
-
 </header>
-
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
@@ -205,8 +196,8 @@ div.csl-indent {
 </section>
 <section id="species" class="level2">
 <h2 class="anchored" data-anchor-id="species">Species</h2>
-<p><a href="#fig-bill-dims-species" class="quarto-xref">Figure&nbsp;1</a> is a bar plot of species of penguins.</p>
-<div class="cell" data-output-location="column-fragment">
+<p><a href="#fig-bill-dims-species">Figure&nbsp;1</a> is a bar plot of species of penguins.</p>
+<div class="cell" data-output-location="column-fragment" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(</span>
 <span id="cb2-2"><a href="#cb2-2"></a>  penguins,</span>
 <span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">aes</span>(</span>
@@ -219,14 +210,10 @@ div.csl-indent {
 <span id="cb2-10"><a href="#cb2-10"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
 <span id="cb2-11"><a href="#cb2-11"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill length (mm)"</span>, <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-bill-dims-species" class="quarto-figure quarto-figure-center anchored" alt="A scatterplot of three species of penguins showing the relationship between bill depth and bill length. " width="480">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-bill-dims-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="index_files/figure-html/fig-bill-dims-species-1.png" class="img-fluid figure-img" alt="A scatterplot of three species of penguins showing the relationship between bill depth and bill length. " width="480">
-</div>
-<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-bill-dims-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A scatterplot of three species of penguins showing the relationship between bill depth and bill length.
-</figcaption>
+<div id="fig-bill-dims-species" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-bill-dims-species-1.png" class="img-fluid figure-img" alt="A scatterplot of three species of penguins showing the relationship between bill depth and bill length. " width="480"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: A scatterplot of three species of penguins showing the relationship between bill depth and bill length.</figcaption>
 </figure>
 </div>
 </div>
@@ -234,36 +221,32 @@ Figure&nbsp;1: A scatterplot of three species of penguins showing the relationsh
 </section>
 <section id="penguins" class="level2">
 <h2 class="anchored" data-anchor-id="penguins">Penguins</h2>
-<p><a href="#tbl-penguins-top10" class="quarto-xref">Table&nbsp;1</a> shows the first 10 penguins from the dataset.</p>
+<p><a href="#tbl-penguins-top10">Table&nbsp;1</a> shows the first 10 penguins from the dataset.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">|&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(species, island, bill_length_mm, bill_depth_mm) <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-penguins-top10" class="cell anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-penguins-top10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Top 10 rows of the penguins dataset.
-</figcaption>
-<div aria-describedby="tbl-penguins-top10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="gugeuxxtwb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gugeuxxtwb table {
+<div id="tbl-penguins-top10" class="anchored">
+
+<div id="nfsijnyfuh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nfsijnyfuh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gugeuxxtwb thead, #gugeuxxtwb tbody, #gugeuxxtwb tfoot, #gugeuxxtwb tr, #gugeuxxtwb td, #gugeuxxtwb th {
+#nfsijnyfuh thead, #nfsijnyfuh tbody, #nfsijnyfuh tfoot, #nfsijnyfuh tr, #nfsijnyfuh td, #nfsijnyfuh th {
   border-style: none;
 }
 
-#gugeuxxtwb p {
+#nfsijnyfuh p {
   margin: 0;
   padding: 0;
 }
 
-#gugeuxxtwb .gt_table {
+#nfsijnyfuh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -289,12 +272,12 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-left-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_caption {
+#nfsijnyfuh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gugeuxxtwb .gt_title {
+#nfsijnyfuh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -306,7 +289,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-bottom-width: 0;
 }
 
-#gugeuxxtwb .gt_subtitle {
+#nfsijnyfuh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -318,7 +301,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-top-width: 0;
 }
 
-#gugeuxxtwb .gt_heading {
+#nfsijnyfuh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -330,13 +313,13 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-right-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_bottom_border {
+#nfsijnyfuh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_col_headings {
+#nfsijnyfuh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -351,7 +334,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-right-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_col_heading {
+#nfsijnyfuh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -371,7 +354,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   overflow-x: hidden;
 }
 
-#gugeuxxtwb .gt_column_spanner_outer {
+#nfsijnyfuh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -383,15 +366,15 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 4px;
 }
 
-#gugeuxxtwb .gt_column_spanner_outer:first-child {
+#nfsijnyfuh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gugeuxxtwb .gt_column_spanner_outer:last-child {
+#nfsijnyfuh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gugeuxxtwb .gt_column_spanner {
+#nfsijnyfuh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -403,11 +386,11 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   width: 100%;
 }
 
-#gugeuxxtwb .gt_spanner_row {
+#nfsijnyfuh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gugeuxxtwb .gt_group_heading {
+#nfsijnyfuh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -433,7 +416,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   text-align: left;
 }
 
-#gugeuxxtwb .gt_empty_group_heading {
+#nfsijnyfuh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -448,15 +431,15 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   vertical-align: middle;
 }
 
-#gugeuxxtwb .gt_from_md > :first-child {
+#nfsijnyfuh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gugeuxxtwb .gt_from_md > :last-child {
+#nfsijnyfuh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gugeuxxtwb .gt_row {
+#nfsijnyfuh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -475,7 +458,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   overflow-x: hidden;
 }
 
-#gugeuxxtwb .gt_stub {
+#nfsijnyfuh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,7 +471,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 5px;
 }
 
-#gugeuxxtwb .gt_stub_row_group {
+#nfsijnyfuh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -502,15 +485,15 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   vertical-align: top;
 }
 
-#gugeuxxtwb .gt_row_group_first td {
+#nfsijnyfuh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gugeuxxtwb .gt_row_group_first th {
+#nfsijnyfuh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gugeuxxtwb .gt_summary_row {
+#nfsijnyfuh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -520,16 +503,16 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 5px;
 }
 
-#gugeuxxtwb .gt_first_summary_row {
+#nfsijnyfuh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_first_summary_row.thick {
+#nfsijnyfuh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gugeuxxtwb .gt_last_summary_row {
+#nfsijnyfuh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -539,7 +522,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-bottom-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_grand_summary_row {
+#nfsijnyfuh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -549,7 +532,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 5px;
 }
 
-#gugeuxxtwb .gt_first_grand_summary_row {
+#nfsijnyfuh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -559,7 +542,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-top-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_last_grand_summary_row_top {
+#nfsijnyfuh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -569,11 +552,11 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-bottom-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_striped {
+#nfsijnyfuh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gugeuxxtwb .gt_table_body {
+#nfsijnyfuh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -582,7 +565,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-bottom-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_footnotes {
+#nfsijnyfuh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -596,7 +579,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-right-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_footnote {
+#nfsijnyfuh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -605,7 +588,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 5px;
 }
 
-#gugeuxxtwb .gt_sourcenotes {
+#nfsijnyfuh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -619,7 +602,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   border-right-color: #D3D3D3;
 }
 
-#gugeuxxtwb .gt_sourcenote {
+#nfsijnyfuh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -627,144 +610,131 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
   padding-right: 5px;
 }
 
-#gugeuxxtwb .gt_left {
+#nfsijnyfuh .gt_left {
   text-align: left;
 }
 
-#gugeuxxtwb .gt_center {
+#nfsijnyfuh .gt_center {
   text-align: center;
 }
 
-#gugeuxxtwb .gt_right {
+#nfsijnyfuh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gugeuxxtwb .gt_font_normal {
+#nfsijnyfuh .gt_font_normal {
   font-weight: normal;
 }
 
-#gugeuxxtwb .gt_font_bold {
+#nfsijnyfuh .gt_font_bold {
   font-weight: bold;
 }
 
-#gugeuxxtwb .gt_font_italic {
+#nfsijnyfuh .gt_font_italic {
   font-style: italic;
 }
 
-#gugeuxxtwb .gt_super {
+#nfsijnyfuh .gt_super {
   font-size: 65%;
 }
 
-#gugeuxxtwb .gt_footnote_marks {
+#nfsijnyfuh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gugeuxxtwb .gt_asterisk {
+#nfsijnyfuh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gugeuxxtwb .gt_indent_1 {
+#nfsijnyfuh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gugeuxxtwb .gt_indent_2 {
+#nfsijnyfuh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gugeuxxtwb .gt_indent_3 {
+#nfsijnyfuh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gugeuxxtwb .gt_indent_4 {
+#nfsijnyfuh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gugeuxxtwb .gt_indent_5 {
+#nfsijnyfuh .gt_indent_5 {
   text-indent: 25px;
 }
+
+#nfsijnyfuh .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#nfsijnyfuh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
-
-<table class="gt_table cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead>
-<tr class="header gt_col_headings">
-<th id="species" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">species</th>
-<th id="island" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">island</th>
-<th id="bill_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_length_mm</th>
-<th id="bill_depth_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_depth_mm</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">39.1</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">18.7</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">39.5</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">17.4</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">40.3</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">18.0</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">NA</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">NA</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">36.7</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">19.3</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">39.3</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">20.6</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">38.9</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">17.8</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">39.2</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">19.6</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">34.1</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">18.1</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_center" headers="species">Adelie</td>
-<td class="gt_row gt_center" headers="island">Torgersen</td>
-<td class="gt_row gt_right" headers="bill_length_mm">42.0</td>
-<td class="gt_row gt_right" headers="bill_depth_mm">20.2</td>
-</tr>
-</tbody>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1:  <p>Top 10 rows of the penguins dataset.</p> </caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="species">species</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="island">island</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm">bill_length_mm</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_depth_mm">bill_depth_mm</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.1</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">18.7</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.5</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">17.4</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">40.3</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">18.0</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">NA</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">36.7</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">19.3</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.3</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">20.6</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">38.9</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">17.8</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.2</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">19.6</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">34.1</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">18.1</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">42.0</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">20.2</td></tr>
+  </tbody>
+  
+  
 </table>
-
 </div>
 </div>
-</div>
-</figure>
 </div>
 </div>
 </section>
@@ -793,7 +763,7 @@ Table&nbsp;1: Top 10 rows of the penguins dataset.
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-gorman2014" class="csl-entry" role="listitem">
 Gorman, Kristen B., Tony D. Williams, and William R. Fraser. 2014. <span>“Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis).”</span> Edited by André Chiaradia. <em>PLoS ONE</em> 9 (3): e90081. <a href="https://doi.org/10.1371/journal.pone.0090081">https://doi.org/10.1371/journal.pone.0090081</a>.
 </div>
@@ -877,9 +847,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -889,17 +860,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -912,128 +874,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1077,7 +917,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1103,32 +942,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1189,7 +1002,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 

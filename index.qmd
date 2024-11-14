@@ -1,6 +1,6 @@
 ---
 title: "Hello, Penguins!"
-author: "Mine Çetinkaya-Rundel"
+author: "Kamran Khan"
 format: 
   html: default
   pdf: default
