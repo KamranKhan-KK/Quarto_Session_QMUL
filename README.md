@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # quarto-qmul session
+=======
+# quarto- session QMUL 
+>>>>>>> 62ee0a8bafdeb2eb8ec75fd8198d3c95e8c50955
 
 Quarto: An Introduction
 
